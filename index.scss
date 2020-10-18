@@ -1,0 +1,48 @@
+@import "variable";
+
+@mixin setCustomDIV($width: 500px, $height: 500px, $bgc: purple, $border-r: 15px) {
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+    border-radius: $border-r;
+}
+@mixin  theme($isDark:true) {
+    @if $isDark{
+        background-color: black;
+
+    }
+    @else{
+
+    }
+
+}
+.dark{
+    @include theme(false);
+}
+.light{
+    @include theme(false);
+}
+
+#test{
+    @include setCustomDIV(400px, 400px, purple);
+}
+
+
+h1{
+    background-color: $h1_bgc;
+}
+*{
+    color: $text_color;
+}
+
+.black{
+    background-color: nth($body_color, 2);
+}
+
+.white{
+    background-color: nth($body_color, 1);
+}
+
+
+
+

@@ -1,0 +1,23 @@
+#test {
+  width: 400px;
+  height: 400px;
+  background-color: purple;
+  border-radius: 15px;
+}
+
+h1 {
+  background-color: darkred;
+}
+
+* {
+  color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+/*# sourceMappingURL=index.css.map */
